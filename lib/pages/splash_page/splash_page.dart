@@ -1,4 +1,6 @@
+import 'package:cosmic_app/widgets/background.dart';
 import 'package:flutter/material.dart';
+import '../../constants/images.dart';
 
 class SplashPage extends StatelessWidget {
   const SplashPage({super.key});
@@ -6,19 +8,11 @@ class SplashPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        height: MediaQuery.sizeOf(context).height,
-        width: MediaQuery.sizeOf(context).width,
-        decoration: BoxDecoration(
-            image: DecorationImage(
-          image: Image.asset('assets/images/background.png').image,
-          fit: BoxFit.cover,
-        )),
+      body: Background(
         child: Stack(
           children: [
             Center(
-              child: Image.asset(
-                'assets/images/logo.png',
+              child: Image.asset(background
               ),
             ),
             const Center(
@@ -41,7 +35,9 @@ class SplashPage extends StatelessWidget {
             ),
           ],
         ),
-      ),
+        ),
     );
   }
 }
+
+

@@ -1,0 +1,1 @@
+const String background = 'assets/images/logo.png';
