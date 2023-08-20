@@ -25,7 +25,7 @@ class LoginPage extends StatelessWidget {
                 ),
                 TextButton(
                   onPressed: (){},
-                  child: Text("Forgot Password?"),
+                  child: const Text("Forgot Password?"),
                 ),
                 ],
               ),
