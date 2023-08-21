@@ -18,7 +18,7 @@ class LoginPage extends StatelessWidget {
                 children: [
                 const Text("Sign in"),
                 TextFormField(
-                  decoration: const InputDecoration(hintText: "Email"),
+                  decoration: const InputDecoration(hintText: "E-mail"),
                 ),
                 TextFormField(
                   decoration: const InputDecoration(hintText: "Password"),
