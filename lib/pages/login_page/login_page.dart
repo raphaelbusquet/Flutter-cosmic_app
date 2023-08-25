@@ -11,14 +11,19 @@ class LoginPage extends StatelessWidget {
     return Scaffold(
       body: Background(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Image.asset(background),
+            Padding(
+              padding: const EdgeInsets.only(top: 70.0),
+              child: Image.asset(background),
+            ),
             Container(
               child: Column(
                 children: [
                 const Text("Sign-in"),
                 TextFormField(
-                  decoration: const InputDecoration(hintText: "E-mail"),
+                  decoration: const InputDecoration(
+                    hintText: "E-mail"),
                 ),
                 TextFormField(
                   decoration: const InputDecoration(hintText: "Password"),
@@ -26,6 +31,16 @@ class LoginPage extends StatelessWidget {
                 TextButton(
                   onPressed: (){},
                   child: const Text("Forgot Password?"),
+                ),
+                Container(
+                  child: Text("Sign in"),
+                ),
+                Row(
+                  children: [
+                    Image.asset(lineImage),
+                    Text("or sign in using"),
+                    Image.asset(lineImage)
+                  ],
                 ),
                 ],
               ),
