@@ -20,7 +20,7 @@ class LoginPage extends StatelessWidget {
             Container(
               child: Column(
                 children: [
-                const Text("Signin"),
+                const Text("Sign-in"),
                 TextFormField(
                   decoration: const InputDecoration(
                     hintText: "E-mail"),
